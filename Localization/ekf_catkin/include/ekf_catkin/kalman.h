@@ -43,5 +43,10 @@ class kalman{
     Eigen::VectorXd x;      //state vector
     Eigen::MatrixXd I;      //identity matrix
     Eigen::VectorXd y;      //output vector
+
+ // Multi-landmark tracking
+    int processed_landmarks_;
+    double landmark_noise_;
+
 };
 #endif
